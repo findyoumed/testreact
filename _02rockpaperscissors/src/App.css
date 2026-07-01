@@ -1,0 +1,139 @@
+@keyframes bounce {
+  0% { transform: translateY(-25px); }
+  40% { transform: translateY(0); }
+  70% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+body {
+  background-color: #F1EFEC;
+}
+
+.game-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.game-title>h1 {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.game-container {
+  width: 80%;
+  justify-self: center;
+}
+
+.main {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  margin: 10px;
+  padding: 10px;
+  min-width: 250px;
+  width: 40%;
+  height: 450px;
+  border : 6px solid black;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.item-img {
+  min-width: 128px;
+  max-width: 256px;
+  margin: auto;
+}
+
+.box.init {
+  background-color: #fff;
+  animation: bounce 0.7s ease-in-out;
+}
+
+.box.win {
+  border-color: #5F8B4C;
+  background-color: #99BC85;
+  animation: pulse 0.5s ease;
+  box-shadow: rgba(95, 139, 76, 0.4) -24px -24px 55px, 
+            rgba(95, 139, 76, 0.25) -12px -12px 30px, 
+            rgba(95, 139, 76, 0.25) 4px 4px 6px, 
+            rgba(95, 139, 76, 0.3) 12px 12px 13px, 
+            rgba(95, 139, 76, 0.22) -3px -3px 5px;
+}
+
+.box.win>h2 {
+  color: #3F7D58;
+}
+
+.box.lose {
+  border-color: #EC5228;
+  background-color: #FFC1B4;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+            rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.box.lose>h2 {
+  color: #EC5228;
+}
+
+.box.tie {
+  border-color: #006A71;
+  background-color: #9ACBD0;
+}
+
+.box.tie>h2 {
+  color: #006A71;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #5F8B4C;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background-color: #3F7D58;
+}
+
+@media (max-width: 890px) {
+  .game-container {
+    width: 95%;
+  }
+
+  .main.game-boxes {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main.game-buttons {
+    flex-direction: column;
+  }
+}

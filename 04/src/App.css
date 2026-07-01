@@ -1,0 +1,33 @@
+body {
+  background: url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weatherBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.weatherBtn {
+  padding: 10px;
+}
+
+.weatherBtn Button {
+  margin: 10px;
+}

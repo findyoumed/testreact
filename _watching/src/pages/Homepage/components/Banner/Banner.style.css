@@ -1,0 +1,45 @@
+.banner {
+    height: 56vh;
+    background-position: left 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner::before {
+    content: '';
+    background: linear-gradient(to top, black, transparent);
+    position: absolute;
+    left:0;
+    height: 56vh;
+    width: 100%;
+}
+
+.banner-text-area {
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
+}
+.banner-text-area > * {
+    z-index: 2;
+}
+
+
+
+@media (max-width: 580px) {
+    .banner-text-area {
+        max-height: 100%;
+        width: 70%;
+        height: auto;
+    }
+    .banner-text-area > p {
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        word-break: keep-all;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+}

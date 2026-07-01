@@ -1,0 +1,99 @@
+.login_area {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.login_area svg {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.login_form {
+  width: 25vw;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+.nav_section {
+  display: flex;
+  justify-content: center;
+}
+
+.nav_section img {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.menu_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_list {
+  display: flex;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.menu_list li {
+  margin: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.search_area {
+  position: absolute;
+  right: 20px;
+  overflow: auto;
+}
+
+.search_input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px black;
+  padding: 7px;
+  padding-left: 30px;
+  width: 110px;
+}
+
+.search_input:focus {
+  border-bottom: solid 2px black;
+  outline: none;
+}
+
+.search_button {
+  position: relative;
+  right: -20px;
+  cursor: pointer;
+}
+
+.product_card {
+  transform: scale(1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.product_card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.product_card_img {
+  width: 265px;
+  height: 395px;
+  object-fit: cover;
+}
+
+.product_card_detail {
+  width: 265px;
+  text-align: right;
+}
+
+.product_img {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* Navbar */
+.login-button, .logout-button {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login-button svg, .logout-button svg {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-section>img {
+    cursor: pointer;
+}
+
+.menu-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.menu-list li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-area-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+}
+
+.menu-area-sm svg {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.menu-area-sm .search-area {
+    overflow: hidden;
+}
+
+.menu-list-sm {
+    list-style: none;
+}
+
+.menu-list-sm li {
+    cursor: pointer;
+    margin: 20px 10px;
+}
+
+.search-area.underline {
+    border-bottom: 1px solid black;
+}
+
+.search-area {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    transition: all 0.3 ease-in;
+}
+
+.search-area input {
+    border: none;
+}
+
+/* loaindg spinner*/
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ProductCard */
+.product-card {
+    cursor: pointer;
+}
+
+.product-card-img-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-card-img {
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+.product-card-img:hover {
+    transform: scale(1.2);
+}
+
+/* ProductDetail */
+.product-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-weight: 500;
+}
+
+.product-price {
+    font-weight: 600;
+}
+
+.product-size-option {
+    border: 1px solid gainsboro;
+    max-width: 20%;
+    cursor: pointer;
+}
+
+.product-size-option div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-size-option:hover {
+    border: 1px solid black;
+}
+
+.product-size-option.active {
+    border: 1px solid black;
+}
+
+
+
+@media (max-width: 991px) {
+
+    /* Navbar */
+    .login-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-area {
+        position: unset;
+    }
+
+}
+
